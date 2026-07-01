@@ -86,3 +86,30 @@ La forma más fácil es desde Swagger en `http://localhost:3000/api-docs`:
 - Cada votante puede emitir un único voto.
 - Al votar se actualiza automáticamente el estado del votante y el conteo del candidato.
 
+## Estadisticas
+
+JSON de las estadisticas
+
+{
+  "status": "success",
+  "data": {
+    "total_votes": 3,
+    "total_voters_voted": 3,
+    "results": [
+      {
+        "candidate_id": 1,
+        "name": "Maria Gaviria",
+        "party": "Partido Verde",
+        "votes": 2,
+        "percentage": 66.67
+      },
+      {
+        "candidate_id": 2,
+        "name": "Carlos Ruiz",
+        "party": "Partido Liberal",
+        "votes": 1,
+        "percentage": 33.33
+      }
+    ]
+  }
+}
